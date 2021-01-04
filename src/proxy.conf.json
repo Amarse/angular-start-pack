@@ -1,0 +1,7 @@
+{
+    "/warever" : {
+    "target": "",
+    "secure": false,
+    "logLevel": "debug"
+}
+}
