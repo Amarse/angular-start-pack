@@ -12,18 +12,27 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { ContentComponent } from './content/content.component';
-
+import { LoginComponent } from './login/login.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { JoinComponent } from './join/join.component';
 
 
 const routes:Route[]=[
   {path:'', component:HomeComponent},
-  {path:'content', component:ContentComponent}
+  {path:'content', component:ContentComponent},
+  {path:'login', component:LoginComponent},
+  {path:'join', component:JoinComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentComponent
+    ContentComponent,
+    LoginComponent,
+    JoinComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +43,12 @@ const routes:Route[]=[
     MatButtonModule,
     MatSidenavModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatInputModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

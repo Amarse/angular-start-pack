@@ -1,8 +1,11 @@
 .mat-toolbar-single-row {
     height: 100px;
-    display:flex;
+    width: 100%;
+
 }
 
 .menu{
-    margin-left: 109px;
+    position: absolute;
+    right: 365px;
 }
+
