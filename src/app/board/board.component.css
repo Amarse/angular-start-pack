@@ -1,0 +1,23 @@
+.example-card{
+    margin-top:80px;
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+}
+
+.example-form{
+    margin-top: 40px;
+    }
+    
+.example-width{
+        width: 50%;
+    }
+.example-full-width{
+        width: 100%;
+        height: 250px;
+        border-top: solid 1px whitesmoke;
+        border-left: solid 1px whitesmoke;
+        border-right: solid 1px whitesmoke;
+        resize: none
+    }
