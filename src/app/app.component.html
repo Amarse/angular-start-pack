@@ -3,6 +3,11 @@
   
     <h1 routerLink="">warever-quick-starter</h1>
     <span class="menu-spacer"></span>
+
+    <a class="navbar-brand" [routerLink]="['/', 'home']" routerLinkActive="active-link">
+			<img src="" class="img-fluid" width="110" height="37">
+		</a>
+
 <span class="menu">
   <button mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
 <mat-menu #aboveMenu="matMenu" yPosition="above">
