@@ -1,4 +1,3 @@
-import { HomeComponent } from './home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,6 +8,8 @@ import { Route, RouterModule } from '@angular/router';
 import { ContentComponent } from './content/content.component';
 import { LoginComponent } from './login/login.component';
 import { JoinComponent } from './join/join.component';
+import { HomeComponent } from './home/home.component';
+import { BoardComponent } from './board/board.component';
 
 //material
 
@@ -24,16 +25,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
-import { BoardComponent } from './board/board.component';
 
 
 
 const routes: Route[] = [
-  { path: '', component: HomeComponent ,children:[ { path: 'board', component: BoardComponent}] },
+  { path: '', component: HomeComponent},
   { path: 'content', component: ContentComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'join', component: JoinComponent }
- 
+  { path: 'join', component: JoinComponent },
+  { path: 'board', component: BoardComponent} 
 ];
 
 @NgModule({
