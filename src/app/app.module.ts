@@ -11,6 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { JoinComponent } from './join/join.component';
 
 //material
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,6 +22,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTableModule} from '@angular/material/table';
+
+
 
 const routes: Route[] = [
   { path: '', component: HomeComponent },
@@ -30,7 +35,7 @@ const routes: Route[] = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent],
+  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent, HomeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -45,6 +50,9 @@ const routes: Route[] = [
     MatSelectModule,
     MatFormFieldModule,
     MatInputModule,
+    MatGridListModule,
+    MatTableModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
