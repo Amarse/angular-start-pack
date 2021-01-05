@@ -24,18 +24,20 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
+import { BoardComponent } from './board/board.component';
 
 
 
 const routes: Route[] = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent ,children:[ { path: 'board', component: BoardComponent}] },
   { path: 'content', component: ContentComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'join', component: JoinComponent },
+  { path: 'join', component: JoinComponent }
+ 
 ];
 
 @NgModule({
-  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent, HomeComponent],
+  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent, HomeComponent, BoardComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
