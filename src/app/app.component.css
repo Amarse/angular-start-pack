@@ -1,5 +1,5 @@
 .mat-toolbar-single-row {
-    height: 100px;
+    height: 180px;
     width: 100%;
 
 }
@@ -7,5 +7,13 @@
 .menu{
     position: absolute;
     right: 365px;
+}
+
+
+h1{
+    margin:25px;
+    margin-left: 50px;
+
+
 }
 

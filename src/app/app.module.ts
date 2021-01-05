@@ -4,36 +4,33 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {  Route,RouterModule } from '@angular/router';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
-import {MatMenuModule} from '@angular/material/menu';
+import { Route, RouterModule } from '@angular/router';
+
 import { ContentComponent } from './content/content.component';
 import { LoginComponent } from './login/login.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatSelectModule} from '@angular/material/select';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
 import { JoinComponent } from './join/join.component';
 
+//material
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
-const routes:Route[]=[
-  {path:'', component:HomeComponent},
-  {path:'content', component:ContentComponent},
-  {path:'login', component:LoginComponent},
-  {path:'join', component:JoinComponent}
+const routes: Route[] = [
+  { path: '', component: HomeComponent },
+  { path: 'content', component: ContentComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'join', component: JoinComponent },
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ContentComponent,
-    LoginComponent,
-    JoinComponent
-  ],
+  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -47,10 +44,9 @@ const routes:Route[]=[
     MatCardModule,
     MatSelectModule,
     MatFormFieldModule,
-    MatInputModule
-
+    MatInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
