@@ -3,9 +3,13 @@
 웹사이트 개발을 위한 기본적인 토대 
 
 현재 지원가능한 브라우저 리스트
+</br>
 -chrome
+</br>
 -firefox
+</br>
 -edge
+</br>
 -ie11 (이하버전 지원불가능)
 
 
@@ -59,3 +63,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Deploy 
+
+1. serve 이용한 배포 
+```
+ng build --prod
+
+```
+production을 사용한 빌드 
+2. serve 설치 
+```
+npm i serve -g
+```
+3. serve 실행 
+```
+serve -s dist/angular-quick-start/
+```
