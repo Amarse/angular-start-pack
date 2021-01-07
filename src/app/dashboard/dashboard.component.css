@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.chart-card{
+    width: 30%;
+    float: left;
+    margin: 10px;
+}

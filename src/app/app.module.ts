@@ -12,7 +12,6 @@ import { HomeComponent } from './home/home.component';
 import { BoardComponent } from './board/board.component';
 
 //material
-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -26,6 +25,13 @@ import { MatInputModule } from '@angular/material/input';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
 
+//chart.js 
+import { ChartsModule } from 'ng2-charts';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LineChartComponent } from './chart/line-chart/line-chart.component';
+import { PieChartComponent } from './chart/pie-chart/pie-chart.component';
+
+
 
 
 const routes: Route[] = [
@@ -33,11 +39,12 @@ const routes: Route[] = [
   { path: 'content', component: ContentComponent },
   { path: 'login', component: LoginComponent },
   { path: 'join', component: JoinComponent },
-  { path: 'board', component: BoardComponent} 
+  { path: 'board', component: BoardComponent},
+  { path: 'dashboard', component:DashboardComponent}
 ];
 
 @NgModule({
-  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent, HomeComponent, BoardComponent],
+  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent, HomeComponent, BoardComponent, DashboardComponent, LineChartComponent, PieChartComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -53,7 +60,8 @@ const routes: Route[] = [
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    MatTableModule
+    MatTableModule,
+    ChartsModule
     
   ],
   providers: [],
