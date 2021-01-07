@@ -30,6 +30,7 @@ import { ChartsModule } from 'ng2-charts';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LineChartComponent } from './chart/line-chart/line-chart.component';
 import { PieChartComponent } from './chart/pie-chart/pie-chart.component';
+import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
 
 
 
@@ -44,7 +45,7 @@ const routes: Route[] = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent, HomeComponent, BoardComponent, DashboardComponent, LineChartComponent, PieChartComponent],
+  declarations: [AppComponent, ContentComponent, LoginComponent, JoinComponent, HomeComponent, BoardComponent, DashboardComponent, LineChartComponent, PieChartComponent, BarChartComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
