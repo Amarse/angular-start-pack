@@ -7,11 +7,12 @@ h1{
 .chart-card{
     width: 45%;
     float: left;
-    margin: 10px;
+    margin-left: 43px;
 }
 
 .chart-card-example{
-    width: 30%;
+    width: 21%;
     float: left;
     margin: 10px;
+    margin-left: 30px;
 }
