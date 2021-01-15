@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,8 +22,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatTableModule} from '@angular/material/table';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTableModule } from '@angular/material/table';
 
 //chart.js 
 import { ChartsModule } from 'ng2-charts';
@@ -32,16 +32,15 @@ import { LineChartComponent } from './chart/line-chart/line-chart.component';
 import { PieChartComponent } from './chart/pie-chart/pie-chart.component';
 import { BarChartComponent } from './chart/bar-chart/bar-chart.component';
 
-
-
+import '@aravindanve/rapidoc';
 
 const routes: Route[] = [
-  { path: '', component: HomeComponent},
+  { path: '', component: HomeComponent },
   { path: 'content', component: ContentComponent },
   { path: 'login', component: LoginComponent },
   { path: 'join', component: JoinComponent },
-  { path: 'board', component: BoardComponent},
-  { path: 'dashboard', component:DashboardComponent}
+  { path: 'board', component: BoardComponent },
+  { path: 'dashboard', component: DashboardComponent }
 ];
 
 @NgModule({
@@ -63,9 +62,9 @@ const routes: Route[] = [
     MatGridListModule,
     MatTableModule,
     ChartsModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }

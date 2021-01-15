@@ -1,47 +1,36 @@
 <div>
-<mat-toolbar>
-  
+  <mat-toolbar>
     <h1 routerLink="">warever-quick-starter</h1>
     <span class="menu-spacer"></span>
 
+    <span class="menu">
+      <button mat-button [matMenuTriggerFor]="aboveMenu">Home</button>
+      <mat-menu #aboveMenu="matMenu" yPosition="above">
+        <button mat-menu-item routerLink="">Home</button>
+        <button mat-menu-item routerLink="content">content</button>
+      </mat-menu>
 
-<span class="menu">
-  <button mat-button [matMenuTriggerFor]="aboveMenu">Home</button>
-<mat-menu #aboveMenu="matMenu" yPosition="above">
-  <button mat-menu-item routerLink="">Home</button>
-  <button mat-menu-item routerLink="content">content</button>
-</mat-menu>
+      <button mat-button [matMenuTriggerFor]="belowMenu">Chart</button>
+      <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item routerLink="dashboard">Dashboard</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="belowMenu">Chart</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
-  <button mat-menu-item routerLink="dashboard">Dashboard</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+      <button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+      <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
-<mat-menu #beforeMenu="matMenu" xPosition="before">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
+      <button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+      <mat-menu #afterMenu="matMenu" xPosition="after">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
 
+      <button mat-raised-button routerLink="login">login</button>
+    </span>
+  </mat-toolbar>
 
-<button mat-button [matMenuTriggerFor]="afterMenu">After</button>
-<mat-menu #afterMenu="matMenu" xPosition="after">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
-
-  <button mat-raised-button routerLink="login">login</button>
-
-</span>
-
-</mat-toolbar>
-
-
-
-<router-outlet></router-outlet>
-
+  <router-outlet></router-outlet>
 </div>
-
-
-
